@@ -1,0 +1,140 @@
+        img {
+            width: 9vw;
+            height: 8vh;
+        }
+        
+        .logo {
+            position: absolute;
+            left: 2vw;
+            margin-top: 0.5vw;
+        }
+        
+        .header {
+            height: 10vh;
+            background-color: rgb(199, 197, 204);
+        }
+        
+        .image_button {
+            position: absolute;
+            right: 2vw;
+        }
+        
+        .search_button {
+            position: absolute;
+            right: 8vw;
+        }
+        
+        .image_button button {
+            padding: 2px;
+            margin-top: 1.5vw;
+            background-color: white;
+            width: auto;
+            border-radius: 6px;
+            border-color: honeydew;
+            font-size: 16px;
+        }
+        
+        .search_button button {
+            padding: 2px;
+            margin-top: 1.5vw;
+            width: auto;
+            background-color: white;
+            border-radius: 6px;
+            border-color: honeydew;
+            font-size: 16px;
+        }
+        
+        .search_button button:hover {
+            border: 2px solid#1e272e;
+            box-shadow: 4px 4px 10px 0px rgb(59, 58, 58);
+            transform: scale(1.07);
+        }
+        
+        .image_button button:hover {
+            border: 2px solid#1e272e;
+            box-shadow: 4px 4px 10px 0px rgb(59, 58, 58);
+            transform: scale(1.07);
+        }
+        
+        .heading {
+            position: absolute;
+            margin-top: 1vw;
+            left: 4vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #575fcf;
+            animation-name: x_axis;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes x_axis {}
+        
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 4px solid #ccc;
+            margin-top: 7vw;
+            padding: 1vw;
+        }
+        
+        .container {
+            height: 10vw;
+            min-width: fit-content;
+        }
+        
+        .container label {
+            position: absolute;
+            left: 2vw;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .container input {
+            position: absolute;
+            left: 35vw;
+            height: 2.5vw;
+            width: 55%;
+            padding-left: 1vw;
+            border: 2px solid black;
+            border-radius: 6px;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .container input:hover {
+            transform: scale(1.02);
+        }
+        
+        .adv_search_button {
+            position: absolute;
+            right: 8.5vw;
+            top: 32vw;
+        }
+        
+        .adv_search_button button {
+            padding: 8px;
+            margin-top: 1.5vw;
+            width: auto;
+            background-color: #dff9fb;
+            border-radius: 6px;
+            border: 4px solid black;
+            font-size: 20px;
+            color: #273c75;
+        }
+        
+        .adv_search_button button:hover {
+            border: 4px solid#1e272e;
+            background-color: #0fbcf9;
+            color: #273c75;
+            box-shadow: 10px 10px 20px 0px rgb(59, 58, 58);
+            transform: scale(1.07);
+        }
+        
+        .adv_search_button button:active {
+            border: 6px solid#1e272e;
+            background-color: #6ab04c;
+            color: #273c75;
+        }

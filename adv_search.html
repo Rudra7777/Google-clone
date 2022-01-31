@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+
+    <link rel="stylesheet" href="adv_search.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="google_PNG.png" alt="google logo">
+        </div>
+        <div class="search_button">
+            <button onclick="window.location.href='\search.html'">Search</button>
+        </div>
+        <div class="image_button">
+            <button onclick="window.location.href='\images.html'">Images</button>
+    </header>
+
+    <div class="heading">
+        <h1>Advanced Search</h1>
+    </div>
+    <hr>
+    <form class="container">
+        <label for="all">All these words:</label>
+        <input type="text" id="all" value="" class="query1"><br><br><br>
+        <label for="exact">This exact word or phrase:</label>
+        <input type="text" id="exact" value="" class="query2"><br><br><br>
+        <label for="any">Any of these words:</label>
+        <input type="text" id="any" value="" class="query3"><br><br><br>
+        <label for="none">none of these words:</label>
+        <input type="text" id="none" value="" class="query4"><br><br><br>
+
+    </form>
+    <div class="adv_search_button">
+        <button class="adv_button">Advanced Search</button>
+    </div>
+    <script type="text/javascript">
+        let query1 = document.querySelector('.query1');
+        let query2 = document.querySelector('.query2');
+        let query3 = document.querySelector('.query3');
+        let query4 = document.querySelector('.query4');
+        let adv_button = document.querySelector('.adv_button');
+
+        adv_button.onclick = function() {
+            let url = 'https://www.google.co.in/search?as_q=' + query1.value + '&as_epq=' + query2.value + '&as_oq=' + query3.value + '&as_eq=' + query4.value + '&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=';
+            window.open(url);
+        }
+    </script>
+
+
+</body>
+
+
+</html>

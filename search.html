@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+
+    <link rel="stylesheet" href="search.css">
+
+</head>
+
+<body>
+
+    <div class="image_button">
+        <button onclick="window.location.href='\images.html'">Images</button>
+    </div>
+    <div class=" adv_search_button ">
+        <button onclick="window.location.href='\adv_search.html'">Advanced Search</button>
+    </div>
+
+
+    <div class="image">
+        <img src="google_PNG.png" alt="">
+    </div>
+    <div class="search_box">
+        <input type="text" name="" class="query" value="">
+    </div>
+    <div class="search_button">
+        <button class="button">Google Search</button>
+    </div>
+    <script type="text/javascript">
+        let query = document.querySelector('.query');
+        let button = document.querySelector('.button');
+
+        button.onclick = function() {
+            let url = 'https://www.google.com/search?q=' + query.value;
+            window.open(url);
+        }
+    </script>
+
+</body>
+
+</html>
